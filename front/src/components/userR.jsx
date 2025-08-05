@@ -28,7 +28,8 @@ rigister(state)
 .then(res=>{
     if(res.data.err==0){
         alert(res.data.msg);
-        navigate("/");
+        // navigate("/");
+        refresh();
     }
     if(res.data.err==1){
         seterr(res.data.msg);
@@ -119,7 +120,7 @@ rigister(state)
           label="Role"
           onChange={handleChange}
         >
-          <MenuItem value="Admin">Admin</MenuItem>
+          {/* <MenuItem value="Admin">Admin</MenuItem> */}
           <MenuItem value="Volunteer">Volunteer</MenuItem>
           <MenuItem value="Intern">Intern</MenuItem>
 
@@ -130,7 +131,7 @@ rigister(state)
   <TextField sx={{ mb: 3 }} fullWidth id='password' label="Password" required name='password'autoComplete="current-password"  type='password'autoFocus onChange={handleChange} value={state.password}></TextField>
           <Button type="submit" variant="contained" fullWidth sx={{ mb:2}}>Sign In</Button>
           <Button  variant="outlined" color="primary" fullWidth sx={{ mb:2}} onClick={refresh}>Refresh</Button>
-          <Link  component={RouterLink}  to="/" sx={{ display:'block',textAlign:"center", mb: 3 }}>Login Here</Link>
+          {/* <Link  component={RouterLink}  to="/" sx={{ display:'block',textAlign:"center", mb: 3 }}>Login Here</Link> */}
 </Box>
       </Box >
       </Container>

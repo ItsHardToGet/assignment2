@@ -66,6 +66,10 @@ function DrawerAppBar(props) {
           
           <Button  sx={{color:"white"}} onClick={()=>navigate("/viewU")}>Home</Button>
     {isAdmin()&&<Button onClick={()=>navigate("/viewAll")}  sx={{color:"white"}}> view All</Button>}
+          <Button  sx={{color:"white"}} onClick={()=>navigate('/uiewU')}>Register</Button>
+
+
+    
     <Button  sx={{color:"white"}} onClick={logout}>logout</Button>
         </Toolbar>
       </AppBar>

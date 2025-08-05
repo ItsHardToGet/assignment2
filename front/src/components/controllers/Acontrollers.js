@@ -1,11 +1,11 @@
 import axios from 'axios'
  import { jwtDecode } from "jwt-decode";
 
-// const URL="http://localhost:8899/api"
+const URL="http://localhost:8899/api"
 // http://localhost:8899/
 
 // https://leaderboard2.onrender.com
-const URL="https://leaderboard2.onrender.com/api"
+// const URL="https://leaderboard2.onrender.com/api"
 
 const rigister=async(data)=>{
    try{

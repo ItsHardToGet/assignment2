@@ -7,6 +7,7 @@ import ViewId from "./components/viewId"
 import ViewU from "./components/viewU"
 import Navbar from "./components/navbar"
 import Error from "./components/error"
+import UserR from "./components/userR"
 import {ProtectedRoute,AdminProtectedRoute} from './components/Protected'
 function App() {
 const router=createBrowserRouter([
@@ -26,6 +27,8 @@ const router=createBrowserRouter([
     element: <Error/>,},
      { path: '/viewU',
     element: <><AdminProtectedRoute/><Navbar/><ViewU/></>,},
+     { path: '/uiewU',
+    element: <><AdminProtectedRoute/><Navbar/><UserR/></>,},
 ])
 
   return (
