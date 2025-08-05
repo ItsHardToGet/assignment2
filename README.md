@@ -1,2 +1,2 @@
-Frontend deployement link:https://magenta-halva-8aeee4.netlify.app/
-backend deployement link:
+Frontend deployement link:  https://wonderful-malabi-ef77bc.netlify.app/
+backend deployement link:  https://leaderboard2-1.onrender.com
